@@ -1,0 +1,165 @@
+@media screen and (max-width: 960px) {
+  .video-container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .video-container {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .video-container {
+    width: 240px;
+  }
+}
+
+* {
+font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.search-container {
+  position: relative;
+  top: 200px;
+  margin:0 auto;
+  max-width: 640px;
+  height: 38px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  transition: top 1s;
+}
+
+.search {
+  border: none;
+  height: 90%;
+  width: 100%;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 16px;
+}
+
+.video-container {
+  position: relative;
+  margin: 0 auto;
+  top: 210px;
+  max-width: 960px;
+  height: 400px;
+  display: flex;
+  flex-flow: row;
+  opacity: 0;
+  transition: opacity 3s, top 2s;
+  overflow: hidden;
+}
+
+.inner-video-container {
+  position: relative;
+  display: flex;
+  transition: transform 2s;
+}
+
+article {
+  width: 240px;
+  flex: none;
+}
+
+.video-content {
+  width: 220px;
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  padding: 0;
+  margin: 0 auto;
+  height: 96%;
+}
+
+.video-content:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.video-content>li {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.source-image {
+  height: 200px;
+}
+
+.source-description {
+  white-space: pre-line;
+  overflow: hidden;
+}
+
+.source-title:before {
+  content: "\f16a";
+  font-family: 'fontawesome';
+  color: red;
+}
+
+.source-channel:before {
+  content: "\f2bd";
+  font-family: 'fontawesome';
+  color: green;
+}
+
+.source-date:before {
+  content: "\f1da";
+  font-family: 'fontawesome';
+  color: green;
+}
+
+.source-statistics:before {
+  content: "\f06e";
+  font-family: 'fontawesome';
+  color: green;
+}
+
+.source-description:before {
+  content: "\f2bd";
+  font-family: 'fontawesome';
+  color: green;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+}
+
+a {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.button-container {
+  height: 38px;
+  width: 300px;
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 3s, top 2s;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  margin: -12px auto;
+  border-radius: 100%;
+  background:linear-gradient(#F5F5F5,#DDDDDD);
+}
+
